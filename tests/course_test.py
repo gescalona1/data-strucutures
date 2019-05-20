@@ -1,5 +1,4 @@
-from people import Course
-from people import Person
+from people import Course, Person
 
 
 if __name__ == "__main__":
