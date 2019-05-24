@@ -9,7 +9,7 @@ class LinkedList(list):
         self._head_node = None
 
     @property
-    def head(self):
+    def head(self) -> Node:
         """Get the head node of this list"""
         return self._head_node
 
@@ -31,6 +31,7 @@ class LinkedList(list):
         i = 0
         for node in self._loop():
             if i == index:  # [1]-->[2]-->[3] --- insert(1, 4)
+                #  I could've just switched the data values and make a new node at the end
                 new_node: Node = Node(node.prev, data, node)
                 previous: Node = node.prev
                 nextious: Node = node.next

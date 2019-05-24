@@ -11,10 +11,11 @@ print(nlist)  # 1,2,3
 nlist.insert(1, 4)
 print(nlist)  # 1,4,3,2
 nlist.remove(2)
+print(4 in nlist)  # True
 print(nlist)  # 1,4,3
 print(len(nlist))  # 3
 
-nlist.sort("bubble")
+nlist.sort("bubble") # 1,3,4
 print(nlist)
 
 
@@ -26,4 +27,4 @@ print(random_list)
 random_list.sort("bubble")
 print("After sorting:")
 print(random_list)
-print(random_list[2])
+print(random_list[2])  # Whatever this is
