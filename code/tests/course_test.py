@@ -1,4 +1,5 @@
-from people import Course, Person
+from .objects.course import Course
+from .objects.person import Person
 
 
 if __name__ == "__main__":
